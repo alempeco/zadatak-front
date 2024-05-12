@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+}
+
+.for-tab {
+  background-color: #007bff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 1px 0px;
+}
+
+.nav-tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background-color: #0bda84;
+  cursor: pointer;
+  color: white;
+}
+.nav-link.active {
+  background-color: #ff8c00;
+  cursor: pointer;
+  color: white;
+}
+
+.movie-container,
+.tv-show-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-item,
+.tv-show-item {
+  position: relative;
+}
+
+.movie-image,
+.tv-show-image {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+}
+
+.movie-info,
+.tv-show-info {
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie-item:hover .movie-image,
+.tv-show-item:hover .tv-show-image {
+  opacity: 0.5;
+}
+
+.movie-item:hover .movie-info,
+.tv-show-item:hover .tv-show-info {
+  opacity: 1;
+}
+.master-container {
+  background-color: #333;
+}
+.title {
+  font-size: 1em;
+  /* margin-bottom: 10px; */
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.back-to-top.visible {
+  opacity: 0;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+/* Stilizacija input polja */
+input[type="text"] {
+  padding: 10px 80px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Stilizacija kada je input fokusiran */
+input[type="text"]:focus {
+  border-color: #ff8c00;
+}
+.movie-detail,
+.series-detail {
+  color: white;
+}
+.center-detail {
+  display: flex;
+  justify-content: center;
+}
+.bk-btn {
+  height: 52px;
+  width: 52px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.bk-btn .bk-btn-triangle {
+  position: relative;
+  top: 13px;
+  left: 10.4px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-right: 13px solid white;
+}
+
+.bk-btn .bk-btn-bar {
+  position: relative;
+  background-color: white;
+  height: 7.8px;
+  width: 13px;
+  top: -3.64px;
+  left: 22.88px;
+}
+.bk-btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
